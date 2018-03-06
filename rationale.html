@@ -1,0 +1,48 @@
+<!--CARSON BAIN and ANITA KHUU META/PROPOSAL SITE COMP 1950 PROJECT-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMP1950 Website Redesign Proposal - Rationale</title>
+    <link rel ="stylesheet" type ="text/css" href ="css/cssreset.css" />
+    <link rel="stylesheet" href="css/meta.css">
+    <!--fonts from google-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header id="title">COMP1950 Website Redesign Proposal</header>
+
+        <!--Navigation-->
+        <nav id="menu">
+            <div class="menu"><a href="index.html">Home</a></div>
+            <div class="menu"><a href="home/home.html">Proposal</a></div>
+            <div class="menu"><a href="sitemap.html">Site Map</a></div>
+            <div class="menu"><a href="rationale.html">Rationale</a></div>
+            <div class="validate"><a href="http://validator.w3.org/check?uri=referer">Validate</a></div>
+        </nav>
+        <!-- Start Content-->
+        <main>
+          <div>
+              <h1>Rationale</h1>
+          <p>Our goal for the newly designed version of the COMP1950 site was to emphasize simplicity and readability for the user. Since this site is the main course resource for the students and lecturer, we wanted to make sure that all assets were easy to access and navigate. To achieve this, we designed a sticky header navigation with dropdown menus for categories containing sub-category items like lectures and quizzes to keep the menu free of clutter. This header navigation is also mobile friendly – we’ve used media queries to trigger a mobile version of the menu when the screen scales down to a certain point and this mobile menu utilizes JQuery’s toggle method to open and close these sub categories when the user clicks their parent category. Both menu versions include a search bar for the user to quickly find what they’re looking for. Unfortunately implementing a search database is outside the scope of this project, but we have considered where a search bar would go in our design.
+          </p>
+          <p> We have implemented “Click to Show/Hide” buttons below the header to maximize screen space for the user. As we have put a fixed header that scrolls with the user when they scroll down on the page which effectively shrinks the viewport, these buttons allow the user to maximize the screen space when they’re looking at pages with lots of content such as the lecture pages. These buttons utilize JQuery’s animate and slide methods to make the header slide up and hide or slide down and display depending on which button is clicked. To emphasize to the user which button is available for them to click, these buttons also use JQuery to add and remove a class called “disabled” which we’ve styled to make whichever button is active at the time to be un-clickable.
+          </p>
+          <p>We've tossed out the old fashioned written quizzes and have digitized and integrated them into the design. Students can now login (still a work in progress), select and type their answers and submit it to the instructor. In the future, we plan to take this further so that students can get instant results and have it saved into their grades without the instructor having to lift a finger! This saves not only trees but eliminates the need for the instructor to mark each quiz one by one.
+          </p>
+          <p>In terms of the general design the content body features a simple layout of sections divided by boxes with subtle box shadows and rounded corners. We’ve utilized a combination of a couple easy to read sans-serif fonts from Google Fonts and “font-awesome” icons for all of the text and have implemented a subtle colour scheme to match the header background image. The entire site is responsive to all screen sizes and utilizes specific style sheets for printer friendly pages.
+          </p>
+              </div>
+        </main>
+
+        <div class="clear"></div>
+
+    </div>
+    <footer>COMP1950 Redesign Project by Carson Bain and Anita Khuu</footer>
+</body>
+</html>
